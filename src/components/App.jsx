@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Button from "./Button";
+import Input from "./Input";
 
 
 function App(){
@@ -31,27 +33,27 @@ function App(){
 
         <div className="container">
             <form>
-                <input type="text" value={calc} ></input>
+                <Input type="text" value={calc}/>
             </form>
             <div className="keypad">
-                <button className="grid-extended" name="clear" onClick={clear}>Clear</button>
-                <button className="backspace grid" name="backspace" onClick={backspace}>C</button>
-                <button className="operators grid" name="/" onClick={handleClick}>&divide;</button>
-                <button className="numbers grid" name="7" onClick={handleClick}>7</button>
-                <button className="numbers grid" name="8" onClick={handleClick}>8</button>
-                <button className="numbers grid" name="9" onClick={handleClick}>9</button>
-                <button className="operators grid" name="*" onClick={handleClick}>&times;</button>
-                <button className="numbers grid" name="4" onClick={handleClick}>4</button>
-                <button className="numbers grid" name="5" onClick={handleClick}>5</button>
-                <button className="numbers grid" name="6" onClick={handleClick}>6</button>
-                <button className="operators grid" name="-" onClick={handleClick}>-</button>
-                <button className="numbers grid" name="1" onClick={handleClick}>1</button>
-                <button className="numbers grid" name="2" onClick={handleClick}>2</button>
-                <button className="numbers grid" name="3" onClick={handleClick}>3</button>
-                <button className="operators grid" name="+" onClick={handleClick}>+</button>
-                <button className="numbers grid" name="." onClick={handleClick}>.</button>
-                 <button className="numbers grid" name="0" onClick={handleClick}>0</button>
-                <button className="grid-extended grid-1" name="=" onClick={result}>=</button>
+                <Button className="grid-extended" name="clear" onClick={clear}/>
+                <Button className="backspace grid" name="C" onClick={backspace}/>
+                <Button className="operators grid" name="/" onClick={handleClick}/>
+                <Button className="numbers grid" name="7" onClick={handleClick}/>
+                <Button className="numbers grid" name="8" onClick={handleClick}/>
+                <Button className="numbers grid" name="9" onClick={handleClick}/>
+                <Button className="operators grid" name="*" onClick={handleClick}/>
+                <Button className="numbers grid" name="4" onClick={handleClick}/>
+                <Button className="numbers grid" name="5" onClick={handleClick}/>
+                <Button className="numbers grid" name="6" onClick={handleClick}/>
+                <Button className="operators grid" name="-" onClick={handleClick}/>
+                <Button className="numbers grid" name="1" onClick={handleClick}/>
+                <Button className="numbers grid" name="2" onClick={handleClick}/>
+                <Button className="numbers grid" name="3" onClick={handleClick}/>
+                <Button className="operators grid" name="+" onClick={handleClick}/>
+                <Button className="numbers grid" name="." onClick={handleClick}/>
+                <Button className="numbers grid" name="0" onClick={handleClick}/>
+                <Button className="grid-extended grid-1" name="=" onClick={result}/>
             </div>
         </div>
 
